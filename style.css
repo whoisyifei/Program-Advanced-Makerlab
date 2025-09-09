@@ -19,7 +19,8 @@
   transition: color 0.3s ease;
 }
 
-.navbar .nav-link:hover {
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
   color: #007BFF !important;
 }
 
