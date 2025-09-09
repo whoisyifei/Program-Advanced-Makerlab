@@ -1,131 +1,32 @@
-/* Reset */
-body, h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
+/* Custom Styling */
+.hero-img {
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(70%);
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f7f9;
-  color: #333;
-  line-height: 1.6;
+.carousel-caption {
+  bottom: 20%;
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: #007BFF;
-  color: white;
+.carousel-caption h1,
+.carousel-caption p {
+  text-shadow: 0px 2px 8px rgba(0,0,0,0.7);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 22px;
-  font-weight: bold;
+.navbar .nav-link {
+  color: #333 !important;
+  transition: color 0.3s ease;
 }
 
-.logo img {
-  width: 40px;
-  margin-right: 10px;
+.navbar .nav-link:hover {
+  color: #007BFF !important;
 }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-  background: url("https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero-content {
-  background: rgba(0, 0, 0, 0.5);
-  display: inline-block;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.hero h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: inline-block;
-  background: #007BFF;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #0056b3;
-}
-
-/* Services Section */
-.services {
-  text-align: center;
-  padding: 60px 20px;
-  background: white;
-}
-
-.services h2 {
-  font-size: 28px;
-  margin-bottom: 40px;
-}
-
-.service-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.service-card {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 12px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+.card {
   transition: transform 0.3s ease;
 }
 
-.service-card:hover {
+.card:hover {
   transform: translateY(-5px);
-}
-
-.service-card img {
-  width: 60px;
-  margin-bottom: 15px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #007BFF;
-  color: white;
-  margin-top: 50px;
 }
